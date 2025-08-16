@@ -29,7 +29,7 @@ export default function Nav() {
     <nav className={`nav ${show && "nav__black"}`}>
       <img
         className="nav__logo"
-        src="../../images/netflix-logo.png"
+        src={`${process.env.PUBLIC_URL}/images/netflix-logo.png`}
         alt="Netflix Logo"
         onClick={() => navigate("/")}
       />
@@ -42,7 +42,7 @@ export default function Nav() {
       />
       <img
         className="nav__avatar"
-        src="../../images/profile-icon.png"
+        src={`${process.env.PUBLIC_URL}/images/profile-icon.png`}
         alt="Netflix Avatar"
       />
     </nav>
